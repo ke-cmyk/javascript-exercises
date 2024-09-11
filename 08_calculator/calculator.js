@@ -13,8 +13,7 @@ const sum = function(arraytoSum) {
   //   sum += num;
   // }
 
-  let sum = arraytoSum.reduce((acc, element) => acc += element, 0);
-  return sum;
+  return arraytoSum.reduce((acc, element) => acc += element, 0);
 };
 
 const multiply = function(arraytoMultiply) {
@@ -22,16 +21,15 @@ const multiply = function(arraytoMultiply) {
   // for(const num of arraytoMultiply) {
   //   prod *= num;
   // }
-  let prod = arraytoMultiply.reduce((acc, element) => acc *= element, 1);
-  return prod;
+  return arraytoMultiply.reduce((acc, element) => acc *= element, 1);
 };
 
 const power = function(num1, num2) {
-  let powerResult = num1;
-  for (let i = 1; i < num2; i++) {
-    powerResult *= num1;
-  } 
-	return powerResult;
+  // let powerResult = num1;
+  // for (let i = 1; i < num2; i++) {
+  //   powerResult *= num1;
+  // } 
+	return Math.pow(num1, num2);
 };
 
 const factorial = function(num) {
