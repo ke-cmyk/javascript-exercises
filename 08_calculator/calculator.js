@@ -8,22 +8,21 @@ const subtract = function(num1, num2) {
 
 const sum = function(arraytoSum) {
   
-  // Regular method
   // let sum = 0;
   // for(const num of arraytoSum) {
   //   sum += num;
   // }
 
-  // With Javascript array functions
   let sum = arraytoSum.reduce((acc, element) => acc += element, 0);
   return sum;
 };
 
 const multiply = function(arraytoMultiply) {
-  let prod = 1;
-  for(const num of arraytoMultiply) {
-    prod *= num;
-  }
+  // let prod = 1;
+  // for(const num of arraytoMultiply) {
+  //   prod *= num;
+  // }
+  let prod = arraytoMultiply.reduce((acc, element) => acc *= element, 1);
   return prod;
 };
 
