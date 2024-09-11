@@ -7,10 +7,15 @@ const subtract = function(num1, num2) {
 };
 
 const sum = function(arraytoSum) {
-  let sum = 0;
-  for(const num of arraytoSum) {
-    sum += num;
-  }
+  
+  // Regular method
+  // let sum = 0;
+  // for(const num of arraytoSum) {
+  //   sum += num;
+  // }
+
+  // With Javascript array functions
+  let sum = arraytoSum.reduce((acc, element) => acc += element, 0);
   return sum;
 };
 
